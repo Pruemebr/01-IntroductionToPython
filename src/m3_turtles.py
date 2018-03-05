@@ -152,7 +152,7 @@ tom = rg.SimpleTurtle()
 tom.pen = rg.Pen('orange', 50)
 tom.forward(250)
 tom.right(90)
-tom.pen =rg.Pen('black', 100)
+tom.pen = rg.Pen('black', 100)
 tom.forward(100)
 #
 ###############################################################################
