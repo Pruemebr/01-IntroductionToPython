@@ -2,10 +2,10 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Bryce Pruemer.
 """
 ###############################################################################
-# TODO: 1.
+# DONE: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ###############################################################################
 
@@ -19,6 +19,29 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #     2. Each rg.SimpleTurtle object draws something
 #          (by moving, using its rg.Pen).  ANYTHING is fine!
 #     3. Each rg.SimpleTurtle moves inside a LOOP.
+
+import rosegraphics as rg
+window = rg.TurtleWindow()
+
+tom = rg.SimpleTurtle()
+tom.speed = 100
+phil = rg.SimpleTurtle()
+phil.speed = 100
+size_1=40
+size_2=70
+
+tom.pen = rg.Pen('black', 10)
+for k in range (15):
+    tom.draw_circle(size_1)
+    size_1 = size_1-5
+
+phil.pen = rg.Pen('yellow', 2)
+for i in range(5):
+    phil.draw_regular_polygon(8,size_2)
+    size_2 = size_2-10
+
+window.close_on_mouse_click()
+
 #
 #   Be creative!  Strive for way-cool pictures!  Abstract pictures rule!
 #
